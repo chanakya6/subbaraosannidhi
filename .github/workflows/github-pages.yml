@@ -3,6 +3,10 @@ name: Build and Deploy React App to Github Pages
 on:
   push:
     branches: [master]
+
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     name: Build and Deploy
